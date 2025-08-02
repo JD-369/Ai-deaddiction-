@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "ThinkMore - AI Deaddiction",
+  "version": "1.0",
+  "description": "Helps you avoid overusing ChatGPT and promotes independent thinking.",
+  "permissions": ["storage", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/*","https://gemini.google.com/*","https://claude.ai/*","https://www.perplexity.ai//*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/brain.png",
+      "32": "images/brain.png",
+      "48": "images/brain.png",
+      "128": "images/brain.png"
+    }
+  },
+  "icons": {
+    "16": "images/brain.png",
+    "48": "images/brain.png",
+    "128": "images/brain.png"
+  }
+}
