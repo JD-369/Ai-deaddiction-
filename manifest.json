@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "ThinkMore - AI Deaddiction",
   "version": "1.0",
-  "description": "Helps you avoid overusing ChatGPT and promotes independent thinking.",
+  "description": "Helps you avoid overusing AI Tools and promotes independent thinking.",
   "permissions": ["storage", "tabs"],
   "background": {
     "service_worker": "background.js"
@@ -24,6 +24,7 @@
   },
   "icons": {
     "16": "images/brain.png",
+    "32": "images/brain.png",
     "48": "images/brain.png",
     "128": "images/brain.png"
   }

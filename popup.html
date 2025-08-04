@@ -1,15 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ThinkMore Stats</title>
+  <title>ThinkMore - Usage</title>
   <style>
-    body { font-family: sans-serif; padding: 10px; }
-    h1 { font-size: 18px; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f7fa;
+      color: #333;
+      width: 300px;
+    }
+
+    h1 {
+      font-size: 18px;
+      margin-bottom: 16px;
+      color: rgba(149, 28, 28, 1);
+      text-align: center;
+
+    }
+
+    #usage-count {
+      font-size: 16px;
+      background: #ffffff;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05); 
+      text-align: center;
+    }
+
+    .footer {
+      margin-top: 16px;
+      font-size: 12px;
+      text-align: center;
+      color: hsla(0, 83%, 33%, 0.722);
+    }
   </style>
 </head>
 <body>
-  <h1>Today's Usage</h1>
+  <h1>Today's AI Usage</h1>
   <div id="usage-count">Loading...</div>
+  <div class="footer">Stay sharp. Think more.</div>
+
   <script src="popup.js"></script>
 </body>
 </html>
